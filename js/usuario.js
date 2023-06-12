@@ -202,7 +202,7 @@ function obtenerIDUsuarioEliminar() {
   var urlParametros = new URLSearchParams(queryString);
 //Creamos variable con el id del usuario.
   var id_usuario_url = urlParametros.get('id');
-  var nombres_url = urlParametros.get('nombre');
+  var nombres_url = urlParametros.get('nombres');
   var apellidos_url = urlParametros.get('apellidos');
 //Agregamos ID a campo oculto.
   document.getElementById('hdn_id_usuario').value = id_usuario_url;

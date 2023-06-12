@@ -102,7 +102,7 @@ function obtenerIDResultadoEliminar() {
   var urlParametros = new URLSearchParams(queryString);
   //Creamos variable con el id del resultado.
   var id_resultado_url = urlParametros.get('id');
-  var nombre_resultado_url = urlParametros.get('txt_nombre_resultado');
+  var nombre_resultado_url = urlParametros.get('nombre_resultado');
   //Agregamos ID a campo oculto.
   document.getElementById('hdn_id_resultado').value = id_resultado_url;
   //Mostramos mensaje de confirmación.
