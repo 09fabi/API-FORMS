@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!--LINKS Y TITULO DE PAGINA-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../css/principal.css">
     
 </head>
-
+<!--NAVBAR CON BOTONES INCLUIDOS-->
 <body id="body" onload="cargarMetodosActualizar();">
     <div class="container2">
         <div class="navbar">
@@ -61,14 +61,14 @@
         <!--Formulario para crear gestion-->
         <div>
             <form class="container">
-                <!--id gestion-->
+                <!--ID GESTION-->
                 <div class="mb-3">
                     <label for="txt_id_gestion" class="form-label">ID Gestión</label>
                     <input type="number" class="form-control" id="txt_id_gestion" disabled
                         aria-describedby="txt_gestion_help">
                     <div id="txt_id_gestion_help" class="form-text"></div>
                 </div>
-                <!--id cliente-->
+                <!--ID CLIENTE-->
                 <div>
                     <label for="lista-id-cliente">Cliente</label>
                     <select id="lista-id-cliente" class="form-select" aria-label="lista clientes">
@@ -94,20 +94,20 @@
                     <select id="lista-id-resultado" class="form-select" aria-label="Default select example">
                     </select>
                 </div>
-                <!--Comentarios-->
+                <!--COMENTARIOS-->
                 <div class="mb-3">
                     <label for="txt_comentario" class="form-label">Comentarios</label>
                     <textarea class="form-control" id="txt_comentario" rows="3"></textarea>
                     <div id="txt_comentario_help" class="form-text"></div>
                 </div>
-                <!--Campos ocultos-->
+                <!--CAMPOS OCULTOS-->
                 <input type="hidden" id="hdn_id_gestion_actualizar">
                 <input type="hidden" id="hdn_id_cliente">
                 <input type="hidden" id="hdn_id_usuario">
                 <input type="hidden" id="hdn_id_tipo_gestion">
                 <input type="hidden" id="hdn_id_resultado">
 
-                <!--Botón de envío-->
+                <!--BOTON DE ENVIADO-->
                 <input type="button" class="btn btn-primary" onclick="actualizarGestion();" value="Actualizar">
                 </button>
             </form>

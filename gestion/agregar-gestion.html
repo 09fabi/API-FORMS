@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!--LINKS Y TITULO DE PAGINA-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +17,7 @@
 
 
 </head>
-
+<!--NAVBAR CON BOTONES INCLUIDOS-->
 <body id="body" onload="cargarInformacion();">
     <div class="container2">
         <div class="navbar">
@@ -59,39 +59,40 @@
     </div>
         <!--Título-->
         <h1 class="text-white">Agregar Gestión</h1>
-        <!--Selección de opciones y comentarios-->
+        <!--SELECCION DE OPCIONES-->
         <div class="text-white">
             <label for="lista-id-cliente">Cliente</label>
             <select id="lista-id-cliente" class="form-select" aria-label="lista clientes">
                 <option disabled selected value="Seleccionar">Seleccionar un cliente</option>
             </select>
-
         </div>
+        <!--USUARIOS-->
         <div class="text-white">
             <label for="lista-id-usuario">Usuarios</label>
             <select id="lista-id-usuario" class="form-select" aria-label="Default select example">
                 <option disabled selected value="Seleccionar">Seleccionar un usuario</option>
             </select>
-
         </div>
+        <!--TIPO GESTION-->
         <div class="text-white">
             <label for="lista-id-tipo-gestion">Tipo de Gestión:</label>
             <select id="lista-id-tipo-gestion" class="form-select" aria-label="Default select example">
                 <option disabled selected value="Seleccionar">Seleccionar un tipo de Gestión</option>
             </select>
         </div>
+        <!--RESULTADO-->
         <div class="text-white">
             <label for="lista-id-resultado">Resultado</label>
             <select id="lista-id-resultado" class="form-select" aria-label="Default select example">
                 <option disabled selected value="Seleccionar">Seleccionar un resultado </option>
             </select>
         </div>
-        <!--Comentarios-->
+        <!--COMENTARIO-->
         <div class="form-group text-white">
             <label for="txt_comentario" class="form-label">Comentarios</label>
             <textarea class="form-control" id="txt_comentario" rows="3"></textarea>
         </div>
-        <!--Botón de envío-->
+        <!--BOTON DE ENVIADO-->
         <input type="button" class="btn btn-primary" onclick="validarCampos();" value="Agregar"> </button>
     </div>
     </div>

@@ -57,10 +57,7 @@ function actualizarTipoGestion(event) {
   var fechaActual = obtenerFechaActual();
 
 //Validamos las validaciones del tipo gestión a actualizar.
-  if (txt_id_tipo_gestion.trim().length !== 8) {
-    alert("La ID debe tener 8 caracteres o no se creará.");
-    return;
-}
+
 
 if (txt_nombre_tipo_gestion.trim().length === 0) {
     alert("Debe agregar un nombre al tipo de gestión o no se creará.");
@@ -84,7 +81,7 @@ if (txt_nombre_tipo_gestion.trim().length === 0) {
       .then(response => {
           if (response.ok) {
               alert("Tipo Gestion Actualizada");
-              window.location.href = "listar-gestiones.html";
+              window.location.href = "listar-tipogestiones.html";
           }
 
       })

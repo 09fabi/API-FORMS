@@ -57,10 +57,7 @@ function actualizarResultado(event) {
 
 
 //Validamos los datos del resultado a actualizar.
-  if (txt_id_resultado.trim().length !== 8) {
-    alert("La ID debe tener 8 caracteres o no se creará.");
-    return;
-}
+
 
 if (txt_nombre_resultado.trim().length === 0) {
     alert("Debe agregar un nombre al resultado o no se creará.");

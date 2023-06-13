@@ -149,7 +149,7 @@ if (txt_celular.trim().length !== 8) {
     return;
 }
 
-var usernameRegex = /^[a-zA-Z0-9_-]{1,8}$/;
+var usernameRegex = /^[a-zA-Z0-9]{8,}$/;
 if (!usernameRegex.test(txt_username)) {
 alert("El usuario no debe contener espacios y debe tener al menos 8 caracteres.");
 return;
@@ -257,6 +257,8 @@ function eliminarUsuario() {
 
 //Completar fila.
   function completarFila(element, index, arr) {
+    //Ocultar la contraseña
+    const password = element.password.replace(/./g, '*');
     arr[index] = document.querySelector('#tbl_usuarios tbody').innerHTML +=
       `<tr>
         <td>${element.id_usuario}-${element.dv}</td>
@@ -265,7 +267,7 @@ function eliminarUsuario() {
         <td>${element.email}</td>
         <td>${element.celular}</td>
         <td>${element.username}</td>
-        <td>${element.password}</td>
+        <td>${password}</td>
         <td>${element.fecha_registro}</td>
         <td>
   <a href='eliminar-usuario.html?id=${element.id_usuario}&nombres=${element.nombres}&apellidos=${element.apellidos}'>   <img width="24px"src='../img/eliminar_24x24.png'></a> 
@@ -346,7 +348,7 @@ function eliminarUsuario() {
       return;
   }
   
-  var usernameRegex = /^[a-zA-Z0-9_-]{1,8}$/;
+  var usernameRegex = /^[a-zA-Z0-9]{8,}$/;
 if (!usernameRegex.test(txt_username)) {
   alert("El usuario no debe contener espacios y debe tener al menos 8 caracteres.");
   return;

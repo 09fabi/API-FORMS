@@ -15,7 +15,7 @@
         crossorigin="anonymous"></script>
 
 </head>
-
+<!--NAV CON BOTONES INCLUIDOS-->
 <body id="body" onload="obtenerIDTipoGestionActualizar();">
     <div class="container2">
         <div class="navbar">
@@ -57,20 +57,20 @@
     </div>
         <!--Título-->
         <h1 class="text-white">Actualizar Tipo Gestion</h1>
-        <!--Formulacio para crear cliente-->
+        <!--Formulacio para actualizar tipo gestion-->
         <div>
             <form class="container">
-                <!--RUT-->
+                <!--id tipo gestion-->
                 <div class="mb-3">
                     <label for="txt_id_tipo_gestion" class="form-label">ID Tipo Gestion</label>
                     <input type="number" class="form-control" id="txt_id_tipo_gestion" aria-describedby="txt_tipo_gestion_help" disabled>
-                    <div id="txt_tipo_gestion_help" class="form-text">Ingresar tipo gestion</div>
+                    <div id="txt_tipo_gestion_help" class="form-text"></div>
                 </div>
-                <!--Nombres-->
+                <!--Nombre tipo gestion-->
                 <div class="mb-3">
                     <label for="txt_nombre_tipo_gestion" class="form-label">Nombre tipo gestion</label>
                     <input type="text" class="form-control" id="txt_nombre_tipo_gestion" aria-describedby="txt_nombre_tipo_gestion_help">
-                    <div id="txt_nombre_tipo_gestion_help" class="form-text">Nombre de la gestion</div>
+                    <div id="txt_nombre_tipo_gestion_help" class="form-text">Nombre de la gestion (Campo requerido).</div>
                 </div>
                 <!--Botón de envío-->
                 <input type="button" class="btn btn-primary" onclick="actualizarTipoGestion(event);" value="Enviar"></button>

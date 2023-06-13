@@ -15,7 +15,7 @@
         crossorigin="anonymous"></script>
 
 </head>
-
+<!--NAVBAR CON BOTONES INCLUIDOS-->
 <body id="body" onload="obtenerIDResultadoActualizar();">
     <div class="container2">
         <div class="navbar">
@@ -57,20 +57,20 @@
     </div>
         <!--Título-->
         <h1 class="text-white">Actualizar Resultado</h1>
-        <!--Formulacio para crear cliente-->
+        <!--Formulacio para ACTUALIZAR RESULTADO-->
         <div>
             <form class="container">
-                <!--RUT-->
+                <!--ID RESULTADO-->
                 <div class="mb-3">
                     <label for="txt_id_resultado" class="form-label">ID resultado</label>
                     <input type="number" class="form-control" id="txt_id_resultado" aria-describedby="txt_resultado_help" disabled>
-                    <div id="txt_resultado_help" class="form-text">ID del resultado</div>
+                    <div id="txt_resultado_help" class="form-text"></div>
                 </div>
-                <!--Nombres-->
+                <!--Nombre resultado-->
                 <div class="mb-3">
                     <label for="txt_nombre_resultado" class="form-label">Nombre resultado</label>
                     <input type="text" class="form-control" id="txt_nombre_resultado" aria-describedby="txt_nombre_help">
-                    <div id="txt_nombre_help" class="form-text">Nombre del resultado</div>
+                    <div id="txt_nombre_help" class="form-text">Nombre del resultado (Campo requerido).</div>
                 </div>
                 <!--Botón de envío-->
                 <input type="button" class="btn btn-primary" onclick="actualizarResultado(event);" value="Enviar"></button>

@@ -1,5 +1,5 @@
 <html>
-
+<!--LINKS Y TITULO DE PAGINA-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../css/principal.css">
 
 </head>
-
+<!--NAVBAR CON BOTONES INCLUIDOS-->
 <body id="body" onload="obtenerIDGestionEliminar();">
     <div class="container2">
         <div class="navbar">
@@ -55,13 +55,13 @@
             </div>
         </div>
     </div>
-        <!--Título-->
+        <!--TITULO-->
         <h1 class="text-white">Eliminar Gestion</h1>
-        <!--Tabla con lista de gestiones-->
+        <!--TABLA LISTA DE GESTIONES-->
         <div class="alert alert-danger" role="alert" id="alt_eliminacion_gestion"></div>
         <input type="button" class="btn btn-danger" value="Eliminar" onclick="eliminarGestion();">
         <input type="button" class="btn btn-secondary" value="Cancelar" onclick="javascript:history.back();">
-        <!--Campo oculto-->
+        <!--CAMPO OCULTO-->
         <input type="hidden" id="hdn_id_gestion">
 
     </div>
